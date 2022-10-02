@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Donatellos Pasta</title>
+
+    <!-- Pure Css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+        integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+    <!--<![endif]-->
+    <!-- font awsome -->
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- Animation css -->
+    <link rel="stylesheet" href="dist/aos.css">
+
+
+    <!-- Pure stylesheet -->
+    <link rel="stylesheet" href="css/marketing.css">
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/global.css">
+</head>
+
+<body class="reservationBG">
+
+    <header>
+
+        <div class="rsv_imgheader">
+            <div class="headertxt">
+                <h1> RESERVATION</h1>
+            </div>
+
+        </div>
+
+
+        <div class=" home-menu pure-menu pure-menu-horizontal">
+
+            <a href="#" class="pure-menu-heading pure-menu-link"> </a>
+            </a>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item pure-menu"><a href="index.html" class="pure-menu-link">Home</a></li>
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="menu.html" id="menuLink1" class="pure-menu-link">Menu</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="menu.html" class="pure-menu-link darkTxt"> Lunch</a></li>
+                        <li class="pure-menu-item"><a href="menu.html" class="pure-menu-link darkTxt">Dinner</a></li>
+                        <li class="pure-menu-item"><a href="menu.html" class="pure-menu-link darkTxt">Beverages</a></li>
+                        <li class="pure-menu-item"><a href="menu.html" class="pure-menu-link darkTxt"> Desert</a></li>
+                    </ul>
+                    <!-- <li class="pure-menu-item pure-menu"><a class="pure-menu-link">Reservation</a></li> -->
+                <li class="pure-menu-item pure-menu"><a href="about.html" class="pure-menu-link">About</a></li>
+                <li class="pure-menu-item pure-menu"><a href="contact.html" class="pure-menu-link">Contact</a></li>
+                <li class="pure-menu-item pure-menu"><a href="reservation.html"
+                        class="pure-menu-link orderbtn">Reservation</a></li>
+
+                </li>
+            </ul>
+
+        </div>
+
+    </header>
+
+
+
+
+
+
+    <<main>
+
+
+        <section>
+            <div class="r-intro-txt">
+                <h1> Its time to plan your next event.</h1>
+                <p> You can also call at (604) - 622 - 8288 or email us at
+                    donatellos@gmail.com. Reservations become available at restaurant opening at 11am. </p>
+            </div>
+        </section>
+
+        <section class="rsvForm">
+
+            <form class="pure-form pure-form-stacked">
+                <fieldset>
+
+                    <label for="firstName"></label>
+                    <input id="name" type="name" placeholder="First Name" class="pure-input-rounded">
+                   
+
+                    <label for="lastName"></label>
+                    <input id="name" type="name" placeholder="Last Name" class="pure-input-rounded">
+                   
+
+                    <label for="phone"></label>
+                    <input id="name" type="email" placeholder="Phone number"class="pure-input-rounded">
+
+                    <label for="email"></label>
+                    <input id="name" type="email" placeholder="Email"class="pure-input-rounded">
+            
+                  
+
+                    <label for="time-slot">Time Slot</label>
+                    <select id="Time">
+                        <option value="AB">12:00</option>
+                        <option value="BC">12:30</option>
+                        <option value="MB">13:00</option>
+                        <option value="NL">13:30</option>
+                        <option value="NS">14:00</option>
+                        <option value="ON">14:30</option>
+                        <option value="PE">15:00</option>
+                        <option value="QC">15:30</option>
+                        <option value="SK">16:00</option>
+                        <option value="NT">16:30</option>
+                        <option value="NU">17:00</option>
+                        <option value="YT">17:30</option>
+                    </select>
+
+                    <label for="Party">Party Size</label>
+                    <select id="state">
+                        <option value="AB">1</option>
+                        <option value="BC">2</option>
+                        <option value="MB">3</option>
+                        <option value="NB">4</option>
+                        <option value="NL">5</option>
+                        <option value="NS">6</option>
+                        <option value="ON">7</option>
+                        <option value="PE">8</option>
+                        <option value="QC">9</option>
+                        <option value="SK">10</option>
+                    </select>
+                    <span class="pure-form-message">*Please note that all large parties with 8 or more guests will be given a 20% gratuity.</span>
+                    
+
+                    <button type="submit" class="pure-button pure-button-primary">FIND A TABLE</button>
+                </fieldset>
+            </form>
+        </section>
+
+
+    </main>
+
+
+    <footer>
+        <ul class="column">
+            <li class="firstColumn">
+                <h1>Socials</h1>
+                <div id="socials">
+                    <a class="fb" href="#"><span><img src="img/facebook.svg"></span></a>
+                    <a class="insta" href="#"><span><img src="img/instagram.svg"></span></a>
+                    <a class="twitter" href="#"><span><img src="img/twitter.svg"></span></a>
+                </div>
+
+            </li>
+            <li class="secondColumn">
+                <h1>Contacts</h1>
+                <p><strong>Hours:</strong> Sunday-Thursday: 11am-12am, <br>Friday/Saturday: 11am-2am and <br>Holidays: 11am-5pm</p>
+                <p><strong>Location: </strong>803 Thurlow St, Vancouver BC V6E 1W1</p>
+                <p><strong>Email:</strong> donatellos@gmail.com</p>
+                <p><strong>Press: </strong>donatellos.press@gmail.com</p>
+                <p><strong>Group dining: </strong>donatellos.events@gmail.com </p>
+
+            </li>
+            <li class="thirdColumn">
+            <div>
+                <label form="subscribe">
+                    <h1>Join us Now!</h1>
+                </label>
+                <ul id="subscribeBox">
+                    <li><input type="text" id="email" name="email" placeholder="Email"></li>
+                    <li><input type="subscribe" value="Subscribe"></li>
+                </ul>
+            </div>
+
+            </li>
+        </ul>
+
+
+    </footer>
+</body>
+
+<script src="dist/aos.js"></script>
+<script>
+    AOS.init({
+        easing: 'ease-in-out-sine'
+    });
+</script>
+
+</html>

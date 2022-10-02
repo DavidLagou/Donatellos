@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: "Lato", sans-serif;}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+#London {background-color:#25392D;}
+#Paris {background-color:#25392D;}
+#Tokyo {background-color:#25392D;}
+#Oslo {background-color:#25392D;}
+</style>
+</head>
+
+<body>
+
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div id="London" class="tabcontent">
+  <h1>London</h1>
+  <p>Off of the crowded street of Robson you will find a spiraling marble stone walkway leading to our modern Italian cuisine. Through the entrance is a wide elegant dining room to the right; and to the left is a modern, yet tasteful, lounge. Donatello’s holds several records in the city of Vancouver: it received its first award from the Vancouver Post shortly after opening back in 2008 and is the only five-star, Vancouver based restaurant that has maintained its high-end status since opening.
+</p>
+  <img width="50%"src="img/p1.jpg" alt="">
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h1>Chef Philip Rossi</h1>
+  <p>Donatello’s head chef, Philip Rossi, had begun his passion of cooking in Florence, Italy 1991. In his years of experience and expertise he has mastered the skill of preparation, detailed cooking and the art of plate presentation. Philip Rossi has won Donatello's several awards as well as won top chef of the Lower Mainland in 2017, 2018 and 2019</p> 
+  <img width="50%"src="img/p1.jpg" alt="">
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h1>Donatello Team </h1>
+  <p>The Donatello staff are all detail oriented individuals who strive in a fast paced environment. With warm welcoming smiles, attentiveness and appreciation for feedback; our staff make a great team. We encourage our staff to stay diligent while working but to also interact with others and have a great time. The environment of Donatello’s shows the staff enjoy being here as much as the guests do. </p>
+  <img width="50%"src="img/p1.jpg" alt="">
+</div>
+
+<div id="Oslo" class="tabcontent">
+  <h1>The Man Donatello, Himself </h1>
+  <p>Frank Donatello, the owner/creator of Donatello’s, moved to British Columbia back in 1989 to start his own restaurant. When Frank Donatello opened Donatello’s back in 2009 his idea was to bring authentic Italian fine dining to Vancouver and allow Canadians to have a real taste of true authentic Italian cuisine. </p>
+  <img width="50%"src="img/p1.jpg" alt="">
+</div>
+
+<button class="tablink" onclick="openCity('London', this, '#25392D')" id="defaultOpen">Chef Philip Rossi
+</button>
+<button class="tablink" onclick="openCity('Paris', this, '#25392D')">Chef Philip Rossi
+</button>
+<button class="tablink" onclick="openCity('Tokyo', this, '#25392D')">Donatello Team
+</button>
+<button class="tablink" onclick="openCity('Oslo', this, '#25392D')">Donatello Himself</button>
+
+<script>
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
